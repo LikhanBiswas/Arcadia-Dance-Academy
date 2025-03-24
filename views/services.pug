@@ -1,0 +1,20 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style
+    style
+        include ../static/style.css
+        include ../static/styleService.css
+
+block content
+    .container
+        h1 Our Services
+        ul.service-list
+            li Beginner Dance Classes - For those starting their journey.
+            li Advanced Dance Training - Master complex techniques.
+            li Private Lessons - Personalized one-on-one coaching.
+            li Group Workshops - Fun and energetic group experiences.
+            li Wedding Choreography - Create magical routines for your big day.
+        a.btn(href='/contact') Get in Touch

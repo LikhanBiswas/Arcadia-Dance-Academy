@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Great+Vibes&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 12px 0;
+    font-size: 30px;
+    font-family: 'ZCOOL QingKe HuangYou';
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    min-height: 77vh;
+    margin: 20px auto;
+    width: 85%;
+    font-family: 'Playfair Display', serif;
+}
+
+.container h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color:rgb(0, 0, 0);
+}
+
+.service-list {
+    list-style: none;
+    padding: 10px;
+}
+
+.service-list li {
+    margin: 15px 0;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #800020;
+    border-radius: 15px;
+    background-color: #f8f0f0;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.service-list li:hover {
+    background-color: #800020;
+    color: white;
+    border-color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 13px;
+    background-color: #800020;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #a12b2f;
+}
+
+/* Footer */
+footer#footer {
+    margin-top: 30px;
+    text-align: center;
+    background-color:rgb(0, 0, 0);
+    color: white;
+    padding: 10px 0;
+}

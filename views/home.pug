@@ -1,0 +1,44 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style
+    style
+        include ../static/style.css
+
+block content
+    section#introSection
+        div Welcome to Arcadia Dance Academy
+        div.small Where Every Step is a Story
+
+    section#missionSection
+        h3 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/mission/dance1.png")
+                div.card-content
+                    p "Dance is the hidden language of the soul." – Martha Graham
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/mission/dance2.png")
+                div.card-content
+                    p "Celebrate your individuality and enjoy every step."
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/mission/dance3.png")
+                div.card-content
+                    p "Share your knowledge with the world!"
+
+    section#sponsorsSection
+        h3 Our Sponsors
+        div#sponsors
+            img(src='/static/sponsors/Aarong.png', alt='Sponsor Image', class='spimage')
+            img(src='/static/sponsors/Berklee.png', alt='Sponsor Image', class='spimage')
+            img(src='/static/sponsors/Rabindra-Bharati.png', alt='Sponsor Image', class='spimage')

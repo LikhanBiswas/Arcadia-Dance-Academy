@@ -1,0 +1,40 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style
+    style
+        include ../static/style.css
+        include ../static/styleAbout.css
+
+block content
+    .about-container
+        h1 About Arcadia Dance Academy
+        p Welcome to Arcadia Dance Academy, a place where passion meets grace, and dancers of all ages and skill levels come together to create magic. Established in 2025, our academy has been a beacon of artistic expression and community spirit.
+        .about-image
+            img(src="/static/logo1.png", alt="Arcadia Dance Academy")
+        .about-details
+            h2 Our Vision
+            p At Arcadia Dance Academy, we believe in empowering individuals through the art of dance. Our vision is to foster creativity, confidence, and lifelong friendships while preserving the beauty of dance traditions.
+            h2 Why Choose Us?
+            ul
+                li Expert instructors with years of experience
+                li A wide range of classes for all skill levels
+                li Community-driven events and workshops
+                li State-of-the-art facilities designed for excellence
+        h2 Our Teachers
+        .teachers-container
+            .teacher-card
+                img(src="/static/Teachers/teacher1.jpg", alt="Teacher 1")
+                h3 Arnika Biswas
+                p Specialization: Ballet and Contemporary
+            .teacher-card
+                img(src="/static/Teachers/teacher2.jpg", alt="Teacher 2")
+                h3 Likhan Biswas
+                p Specialization: Hip-Hop and Jazz
+            .teacher-card
+                img(src="/static/Teachers/teacher3.jpg", alt="Teacher 3")
+                h3 Sejuti Roy
+                p Specialization: Traditional and Cultural Dances
+        a.btn(href='/contact') Get in Touch

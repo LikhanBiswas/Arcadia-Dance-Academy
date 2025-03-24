@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Great+Vibes&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    display: flex;
+    box-sizing: border-box;
+    margin: 0 14px;
+    padding: 0;
+    font-size: 28px;
+    margin-right: 40px;
+    color:black;
+}
+
+#logo img {
+    height: 42px;
+    filter: invert(1);
+}
+
+#navbar {
+    background-color: #800020;
+    padding: 9px 13px;
+    font-family: 'Playfair Display';
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar li a {
+    color: white;
+    font-size: 1.01rem;
+    text-decoration: none;
+    padding: 7px 11px;
+}
+
+#navbar li a:hover {
+    color: black;
+}
+
+#introSection {
+    padding-bottom: 167px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    background: center/cover no-repeat url("/static/bg.png");
+    opacity: 0.9;
+    height: 425px;
+    background-color: rgb(255, 255, 255);
+    font-size: calc(2rem + 1vw);
+}
+
+#introSection div.small {
+    font-size: calc(1.5rem + 0.5vw);
+    padding: 5px;
+    color: rgb(219 0 0);
+    font-family: 'Ballet';
+}
+
+#missionSection {
+    height:326px; /* Changed to auto for responsiveness */
+    width: 100%; /* Adjusted width for better spacing */
+    margin: auto;
+    /* padding: 40px 0;  */
+    background-color: #dfdbdb; /* Light background for contrast */
+}
+
+#missionSection h3 {
+    text-align: center;
+    padding-top: 12px;
+    font-family: 'Playfair Display';
+    font-size: 20px; /* Larger font size for heading */
+    color: #800020; /* Matching navbar color */
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.card {
+    display: inline-block;
+    border: 2px solid #ddd; /* Softer border color */
+    border-radius: 15px; /* Rounded corners */
+    width: 30%; /* Adjusted width for better spacing */
+    margin: 15px; /* Adjusted margin for better spacing */
+    height: 209px; /* Changed to auto for responsiveness */
+    background-color: white; /* White background for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.card-box {
+    display: flex;
+    /* flex-direction: column;  */
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px; /* Added padding for better spacing */
+}
+
+.card-img {
+    height: 100px; /* Smaller image size */
+    width: 100px; /* Fixed width and height for consistency */
+    margin-bottom: 15px; /* Added margin for spacing */
+    margin: 0 auto 15px; /* Centered image */
+   
+    overflow: hidden; /* Ensure the image stays within the circle */
+    padding: 0 ;
+    display: flex;
+    background-color: #ffffff; /* Matching navbar color */
+    
+    
+}
+
+
+.card-img img {
+    width: 100%; /* Smaller image size */
+    height: 100%;
+    /* Maintain aspect ratio */
+    
+    
+}
+
+
+.card-content {
+    text-align: center; /* Centered text */
+    padding: 0 10px;
+}
+
+.card-content h3 {
+    font-family: "Noticia Text", serif;
+    font-size: 1.2rem; /* Adjusted font size */
+    color: #800020; /* Matching navbar color */
+    margin-bottom: 10px; /* Added margin for spacing */
+}
+
+.card-content p {
+    font-size: 0.9rem; /* Smaller font size for content */
+    color: #555; /* Softer text color */
+    line-height: 1.5; /* Improved readability */
+}
+#missionSection .card h3 {
+    text-align: center;
+    margin: 2px;
+    font-family: "Noticia Text", serif; /* Ensure 'Arial' font is applied */
+    font-size: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card {
+        width: 45%; /* Two cards per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* Full width on mobile */
+    }
+}
+   
+#sponsorsSection {
+    color: white;
+    height: 216px; /* Changed to auto for responsiveness */
+    background-color: rgb(28 25 25);
+     /* Added padding for better spacing */
+}
+
+#sponsors {
+    display: flex;
+    justify-content: space-between; /* Centered sponsors for better alignment */
+    align-items: center;
+    
+    height: 103px; /* Changed to auto for responsiveness */
+    max-width: 1000px;
+    margin: 33px 460px; /* Centered the sponsors section */
+}
+
+.spimage {
+    height: 81px;
+    margin: 34px; /* Adjusted margin for better spacing */
+}
+
+#sponsorsSection h3 {
+    text-align: center;
+    padding-top: 12px;
+    font-family: 'Playfair Display';
+}
+
+#footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    height: 60px;
+    background-color: black;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    #navbar ul {
+        flex-direction: column; /* Stack navbar items vertically on small screens */
+        gap: 10px;
+    }
+
+    #logo {
+        margin-right: 0; /* Adjusted margin for small screens */
+    }
+
+    #introSection {
+        height: 300px; /* Adjusted height for small screens */
+        font-size: calc(1.5rem + 1vw); /* Adjusted font size for small screens */
+    }
+
+    #introSection div.small {
+        font-size: calc(1rem + 0.5vw); /* Adjusted font size for small screens */
+    }
+
+    #missionSection {
+        width: 90%; /* Adjusted width for small screens */
+    }
+
+    .card {
+        width: 100%; /* Full width cards on small screens */
+    }
+
+    .card-box {
+        flex-direction: column; /* Stack card content vertically on small screens */
+    }
+
+    .card-img {
+        padding: 5px; /* Adjusted padding for small screens */
+    }
+
+    .card-content p {
+        font-size: 14px; /* Adjusted font size for small screens */
+    }
+
+    #sponsors {
+        flex-direction: column; /* Stack sponsors vertically on small screens */
+    }
+
+    .spimage {
+        height: 60px; /* Adjusted height for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #introSection {
+        height: 200px; /* Further adjusted height for very small screens */
+        font-size: calc(1rem + 1vw); /* Further adjusted font size for very small screens */
+    }
+
+    #introSection div.small {
+        font-size: calc(0.8rem + 0.5vw); /* Further adjusted font size for very small screens */
+    }
+
+    .card-content p {
+        font-size: 12px; /* Further adjusted font size for very small screens */
+    }
+
+    .spimage {
+        height: 50px; /* Further adjusted height for very small screens */
+    }
+}
